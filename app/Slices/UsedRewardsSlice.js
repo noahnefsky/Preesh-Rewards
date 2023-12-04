@@ -1,5 +1,5 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
-import { firebase } from '../firebaseconfig';
+import { firebase, id } from '../firebaseconfig';
 
 export const fetchUsedRewards = createAsyncThunk('usedRewards/fetchDeals', async () => {
   const snapshot = await firebase.firestore().collection(`users/${id}/usedRewards`).get()

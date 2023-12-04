@@ -1,5 +1,5 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
-import { firebase } from '../firebaseconfig';
+import { firebase, id } from '../firebaseconfig';
 
 export const fetchDeals = createAsyncThunk('saveDeal/fetchDeals', async () => {
   const snapshot = await firebase.firestore().collection(`users/${id}/savedRewards`).get()
@@ -11,7 +11,7 @@ export const fetchDeals = createAsyncThunk('saveDeal/fetchDeals', async () => {
 });
 
 const updateDeal =  async (path, code, isSaved) => {
-  const userCollection = firebase.firestore().collection(`users/1/${path}`);
+  const userCollection = firebase.firestore().collection(`users/${id}/${path}`);
   const query = userCollection.where('code', '==', code).limit(1);
           query.get()
             .then((querySnapshot) => {

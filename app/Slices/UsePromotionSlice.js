@@ -1,8 +1,8 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
-import { firebase } from '../firebaseconfig';
+import { firebase, id } from '../firebaseconfig';
 
 export const fetchPromotions = createAsyncThunk('promotions/fetchPromos', async () => {
-  const snapshot = await firebase.firestore().collection('users/1/promotions').get()
+  const snapshot = await firebase.firestore().collection(`users/${id}/promotions`).get()
   const userData = [];
   snapshot.forEach((doc) => {
     userData.push(doc.data());

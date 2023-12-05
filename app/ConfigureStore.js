@@ -1,13 +1,13 @@
-import { configureStore } from '@reduxjs/toolkit'
-import usePromotionReducer, { fetchPromotions }  from './Slices/UsePromotionSlice';
-import saveDealReducer, { fetchDeals } from './Slices/SavedDealsSlice'
-import personInfoReducer, { fetchUserData } from './Slices/SaveInfoSlice'; // Import the personInfo reducer and fetchUserData action
-import mostPopularReducer, { fetchMostPopular } from './Slices/MostPopularSlice';
-import favouritesReducer, { fetchFavourites } from './Slices/FavouritesSlice';
-import browseDealsReducer, { fetchBrowseDeals } from './Slices/BrowseDealsSlice';
-import usedRewardsReducer, { fetchUsedRewards } from './Slices/UsedRewardsSlice';
-import giftsReducer, { fetchGifts } from './Slices/GiftsSlice';
-import imagesReducer, { fetchImages } from './Slices/ImagesSlice';
+import { configureStore } from '@reduxjs/toolkit';
+import browseDealsReducer from './Slices/BrowseDealsSlice';
+import favouritesReducer from './Slices/FavouritesSlice';
+import giftsReducer from './Slices/GiftsSlice';
+import imagesReducer from './Slices/ImagesSlice';
+import mostPopularReducer from './Slices/MostPopularSlice';
+import saveDealReducer from './Slices/SavedDealsSlice';
+import personInfoReducer from './Slices/SaveInfoSlice'; // Import the personInfo reducer and fetchUserData action
+import usedRewardsReducer from './Slices/UsedRewardsSlice';
+import usePromotionReducer from './Slices/UsePromotionSlice';
 
 const store = configureStore({
   reducer: {

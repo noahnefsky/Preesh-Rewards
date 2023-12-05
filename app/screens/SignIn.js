@@ -58,7 +58,7 @@ const SignIn = ({ argument }) => {
         setTimeout(() => {
           setLoading(false);
           argument.navigate('TabNavigator', {});
-        }, 1000);
+        }, 2000);
       })
       .catch((error) => {
         setLoading(false);

@@ -20,7 +20,7 @@ There are around 20 screens, and below are some of the main ones. There are also
 ## Login
 Note screen recording on iphone blocks password field from being shown.
 <p align="center" width="250">
-<img src="https://github.com/noahnefsky/Preesh-Rewards/assets/77079369/9f27037e-dd7d-40af-beb1-3ac77141fc95" width="250" style="margin-right: 50px;" alt="Login Video">
+<img src="https://github.com/noahnefsky/Preesh-Rewards/assets/77079369/9f27037e-dd7d-40af-beb1-3ac77141fc95" width="250" style="margin-right: 50px;">
 </p>
 
 ## Main Page, List of rewards and Card (can buy a gift or add to your balance)
